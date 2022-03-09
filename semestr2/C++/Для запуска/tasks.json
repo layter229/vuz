@@ -1,0 +1,164 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "buildjava",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\Release\\${fileBasenameNoExtension}.exe"
+            ],
+            "command": "javac"
+        },
+        {
+            "type": "cppbuild",
+            "label": "Build",
+            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "runOptions": {},
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\Release\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\MinGW\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "компилятор: C:\\MinGW\\bin\\gcc.exe"
+        },
+        {
+            "type": "cppbuild",
+            "label": "Build (C++)",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+            "runOptions": {},
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\Release\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\MinGW\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "компилятор: C:\\MinGW\\bin\\g++.exe"
+        },
+        {
+            "type": "cppbuild",
+            "label": "Build (with mymod.c)",
+            "command": "C:\\MinGW\\bin\\gcc.exe",
+            "runOptions": {},
+            "args": [
+                "-g",
+                "C:\\My Folder\\Ci\\lab10\\mymod.c",
+                "${file}",
+                "-o",
+                "${fileDirname}\\Release\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\MinGW\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "компилятор: C:\\MinGW\\bin\\gcc.exe"
+        },
+        {
+            "type": "cppbuild",
+            "label": "Build (Graphic)",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+            "runOptions": {},
+            "args": [
+                "-g",
+                "${file}",
+                "-lbgi",
+                "-lgdi32",
+                "-lcomdlg32",
+                "-luuid",
+                "-loleaut32",
+                "-lole32",
+                "-o",
+                "${fileDirname}\\Release\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\MinGW\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "detail": "компилятор: C:\\MinGW\\bin\\g++.exe"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe сборка активного файла",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+            "args": [
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "Задача создана отладчиком."
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe сборка активного файла",
+            "command": "C:\\msys64\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "компилятор: C:\\msys64\\mingw64\\bin\\g++.exe"
+        },
+        {
+            "type": "cppbuild",
+            "label": "C/C++: g++.exe сборка активного файла",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+            "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "options": {
+                "cwd": "C:\\MinGW\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build",
+            "detail": "компилятор: C:\\MinGW\\bin\\g++.exe"
+        }
+    ]
+}

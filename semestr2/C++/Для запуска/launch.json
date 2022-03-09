@@ -1,0 +1,141 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "(gdb) Запуск канала",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "Введите имя программы, например: ${workspaceFolder}/a.exe",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${fileDirname}",
+			"environment": [],
+			"externalConsole": false,
+			"pipeTransport": {
+				"debuggerPath": "/usr/bin/gdb",
+				"pipeProgram": "<Полный путь к программе канала, например: plink.exe>",
+				"pipeArgs": [],
+				"pipeCwd": ""
+			},
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Включить автоматическое форматирование для gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			]
+		},
+		{
+			"name": "Build + Launch",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${fileDirname}/Release/${fileBasenameNoExtension}",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": true,
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"preLaunchTask": "Build",
+			"miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe"
+		},
+		{
+			"name": "Build + Launch (with mymod.c)",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${fileDirname}/Release/${fileBasenameNoExtension}",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": true,
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"preLaunchTask": "Build (with mymod.c)",
+			"miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe"
+		},
+		{
+			"name": "Build + Launch (Graphic)",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${fileDirname}/Release/${fileBasenameNoExtension}",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": true,
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"preLaunchTask": "Build (Graphic)",
+			"miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe"
+		},
+		{
+			"name": "Build + Launch (C++)",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${fileDirname}/Release/${fileBasenameNoExtension}",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": true,
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"preLaunchTask": "Build (C++)",
+			"miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe"
+		},
+		{
+			"name": "Launch",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${fileDirname}/Release/${fileBasenameNoExtension}",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": true,
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe"
+		},
+		{
+			"type": "java",
+			"name": "Launch Current File (Java)",
+			"request": "launch",
+			"mainClass": "${file}",
+			"console": "externalTerminal",
+		}
+	]
+}
