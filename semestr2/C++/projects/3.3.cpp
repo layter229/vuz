@@ -11,7 +11,7 @@ int main()
 {   
     cout<<"Vvedite chisla a, b cherez probel"<<endl;
     cin>>m>>n;
-    for (int i=m;i<n;i+2){
+    for (int i=m;i<n;i+=2){
     s=s+(i*i);
     }
     cout<<s<<""<<endl<<"Dlya zaversheniya najmite <ENTER>";
